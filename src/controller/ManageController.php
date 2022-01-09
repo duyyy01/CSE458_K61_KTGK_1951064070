@@ -40,11 +40,11 @@
                 
                 $blood = new Blood();
                 $bloodArr = [
-                    'txtTda' => $tenduan,
-                    'txtNth' => $namthuchien,
-                    'txtLv' => $linhvuc,
-                    'txtNv' => $nhiemvu,
-                    'txtCqth' => $coquanthuchien,
+                    'tenduan' => $tenduan,
+                    'namthuchien' => $namthuchien,
+                    'linhvuc' => $linhvuc,
+                    'nhiemvu' => $nhiemvu,
+                    'coquanthuchien' => $coquanthuchien,
                     
                 ];
 

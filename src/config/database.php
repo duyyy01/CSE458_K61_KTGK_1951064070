@@ -3,6 +3,6 @@
 const DB_HOST = 'localhost';
 const DB_USERNAME = 'root';
 const DB_PASSWORD = '';
-const DB_NAME = 'ktgk-cse485';
+const DB_NAME = '1951064070_kttv_bdkh';
    
 ?>
