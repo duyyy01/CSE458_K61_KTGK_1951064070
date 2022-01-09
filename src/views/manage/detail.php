@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container contact">    
-    <h2 class="text-center my-3">Chi tieu nguoi hien mau</h2> 
+    <h2 class="text-center my-3">Chi tiết dự án</h2> 
     <button class="btn btn-primary my-3">
         <a href="index.php?controller=manage&action=index">Home</a> 
     </button>
@@ -27,24 +27,22 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>                   
-                    <th>Sex</th>                    
-                    <th>Age</th>
-                    <th>Group</th>
-                    <th>Date</th>
-                    <th>Phone</th>                
+                    <th>tenduan</th>                   
+                    <th>namthuchien</th>
+                    <th>linhvuc</th>                    
+                    <th>nhiemvu</th>
+                    <th>coquanthuchien</th>               
                 </tr>
             </thead>
             <?php if (!empty($blood)): ?>
             <tr>
-                <td><?php echo $blood['bd_id'] ?></td>
-                <td><?php echo $blood['bd_name'] ?></td>
-                <td><?php echo $blood['bd_sex'] ?></td>
-                <td><?php echo $blood['bd_age'] ?></td>
-                <td><?php echo $blood['bd_bgroup'] ?></td>
-                <td><?php echo $blood['bd_reg_date'] ?></td>
-                <td><?php echo $blood['bd_phone'] ?></td>
-            </tr>
+                <td><?php echo $blood['maduan'] ?></td>
+                <td><?php echo $blood['tenduan'] ?></td>
+                <td><?php echo $blood['namthuchien'] ?></td>
+                <td><?php echo $blood['linhvuc'] ?></td>
+                <td><?php echo $blood['nhiemvu'] ?></td>
+                <td><?php echo $blood['coquanthuchien'] ?></td>
+            
             <?php else: ?>
             <tr>
                 <td colspan="2">KHông có dữ liệu</td>

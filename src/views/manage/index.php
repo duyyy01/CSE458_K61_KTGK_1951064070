@@ -19,7 +19,7 @@
 </head>
 <body>
 <div class="container-fluid" style="max-width: 1020px;margin: 0 auto;">    
-    <h2 class="text-center my-5">Hien thi danh sach hien mau</h2>  
+    <h2 class="text-center my-5">Hiển thị danh sách dự án</h2>  
     <?php
         require_once 'src/views/template/error.php';
     ?>
@@ -34,12 +34,11 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>                   
-                <th>Sex</th>                    
-                <th>Age</th>
-                <th>Group</th>
-                <th>Date</th>
-                <th>Phone</th>  
+                <th>tenduan</th>                   
+                <th>namthuchien</th>                    
+                <th>linhvuc</th>
+                <th>nhiemvu</th>
+                <th>coquanthuchien</th>
                 <th>Detail</th>              
                 <th>Update</th>              
                 <th>Delete</th>              
@@ -52,20 +51,19 @@
                     <?php
                     //khai báo 3 url xem, sửa, xóa
                     $urlDetail =
-                        "index.php?controller=manage&action=detail&id=" . $blood['bd_id'];
+                        "index.php?controller=manage&action=detail&id=" . $blood['maduan'];
                     $urlEdit =
-                        "index.php?controller=manage&action=edit&id=" . $blood['bd_id'];
+                        "index.php?controller=manage&action=edit&id=" . $blood['maduan'];
                     $urlDelete =
-                        "index.php?controller=manage&action=delete&id=" . $blood['bd_id'];
+                        "index.php?controller=manage&action=delete&id=" . $blood['maduan'];
                     ?>
                     <tr>
-                        <td style="font-weight: 600"><?php echo $blood['bd_id'] ?></td>
-                        <td style="font-weight: 600"><?php echo $blood['bd_name'] ?></td>
-                        <td style="font-weight: 600"><?php echo $blood['bd_sex'] ?></td>
-                        <td style="font-weight: 600"><?php echo $blood['bd_age'] ?></td>
-                        <td style="font-weight: 600"><?php echo $blood['bd_bgroup'] ?></td>
-                        <td style="font-weight: 600"><?php echo $blood['bd_reg_date'] ?></td>
-                        <td style="font-weight: 600"><?php echo $blood['bd_phone'] ?></td>
+                        <td style="font-weight: 600"><?php echo $blood['maduan'] ?></td>
+                        <td style="font-weight: 600"><?php echo $blood['tenduan'] ?></td>
+                        <td style="font-weight: 600"><?php echo $blood['namthuchien'] ?></td>
+                        <td style="font-weight: 600"><?php echo $blood['linhvuc'] ?></td>
+                        <td style="font-weight: 600"><?php echo $blood['nhiemvu'] ?></td>
+                        <td style="font-weight: 600"><?php echo $blood['coquanthuchien'] ?></td>
                         <td>
                             <button type="button" class="btn btn-info">
                                 <a  href="<?php echo $urlDetail?>">Chi tiết</a> &nbsp;

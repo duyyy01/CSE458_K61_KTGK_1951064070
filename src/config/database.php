@@ -3,6 +3,6 @@
 const DB_HOST = 'localhost';
 const DB_USERNAME = 'root';
 const DB_PASSWORD = '';
-const DB_NAME = 'blood_donor';
+const DB_NAME = 'ktgk-cse485';
    
 ?>

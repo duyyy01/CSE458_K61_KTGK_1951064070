@@ -31,21 +31,21 @@
         public function add() {
             $error = '';
             if (isset($_POST['submit'])) {
-                $name = $_POST['txtName'];
-                $sex = $_POST['txtSex'];
-                $age = $_POST['txtAge'];
-                $group = $_POST['txtGroup'];
-                $date = $_POST['txtDate'];
-                $phone = $_POST['txtPhone'];
+                $tenduan = $_POST['txtTda'];
+                $namthuchien = $_POST['txtNth'];
+                $linhvuc = $_POST['txtLv'];
+                $nhiemvu = $_POST['txtNv'];
+                $coquanthuchien = $_POST['txtCqth'];
+                
                 
                 $blood = new Blood();
                 $bloodArr = [
-                    'name' => $name,
-                    'sex' => $sex,
-                    'age' => $age,
-                    'group' => $group,
-                    'date' => $date,
-                    'phone' => $phone
+                    'txtTda' => $tenduan,
+                    'txtNth' => $namthuchien,
+                    'txtLv' => $linhvuc,
+                    'txtNv' => $nhiemvu,
+                    'txtCqth' => $coquanthuchien,
+                    
                 ];
 
                 $isInsert = $blood->insert($bloodArr);
@@ -83,25 +83,23 @@
             //xử lý submit form, lặp lại thao tác khi submit lúc thêm mới
             // $error = '';
             if (isset($_POST['submit'])) {
-                $name = $_POST['txtName'];
-                $sex = $_POST['txtSex'];
-                $age = $_POST['txtAge'];
-                $group = $_POST['txtGroup'];
-                $date = $_POST['txtDate'];
-                $phone = $_POST['txtPhone'];
+                $tenduan = $_POST['txtTda'];
+                $namthuchien = $_POST['txtNth'];
+                $linhvuc = $_POST['txtLv'];
+                $nhiemvu = $_POST['txtNv'];
+                $coquanthuchien = $_POST['txtCqth'];
                 //check validate dữ liệu
             
                 //xử lý update dữ liệu vào hệ thống
                 $bloodModel = new Blood();
             
                 $bloodArr = [
-                    'id' => $id,
-                    'name' => $name,
-                    'sex' => $sex,
-                    'age' => $age,
-                    'group' => $group,
-                    'date' => $date,
-                    'phone' => $phone
+                    'maduan' => $id,
+                    'txtTda' => $tenduan,
+                    'txtNth' => $namthuchien,
+                    'txtLv' => $linhvuc,
+                    'txtNv' => $nhiemvu,
+                    'txtCqth' => $coquanthuchien,
                 ];
             
 

@@ -1,5 +1,5 @@
 <h1>
-    Thêm mới blood
+    Thêm mới dự án
 </h1>
 
 <!--</form>-->
@@ -7,23 +7,22 @@
     <?php echo $error; ?>
 </div>
 <form method="post" action="">
-    Name :
-    <input type="text" require name="txtName" value="" />
+    Tên Dự Án :
+    <input type="text" require name="txtTda" value="" />
     <br />
-    Sex :
-    <input type="text" require name="txtSex" value="" />
+    Năm Thực Hiện :
+    <input type="text" require name="txtNth" value="" />
     <br />
-    Age :
-    <input type="text" require name="txtAge" value="" />
+    Lĩnh Vực :
+    <input type="text" require name="txtLv" value="" />
     <br />
-    Group :
-    <input type="text" require name="txtGroup" value="" />
+    Nhiệm Vụ :
+    <input type="text" require name="txtNv" value="" />
     <br />
-    Date :
-    <input type="text" require name="txtDate" value="" />
+    Cơ Quan Thực Hiện :
+    <input type="text" require name="txtCqth" value="" />
     <br />
-    Phone :
-    <input type="text" require name="txtPhone" value="" />
+    
    
     <input type="submit" require name="submit" value="Save" />
 </form>
